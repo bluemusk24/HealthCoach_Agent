@@ -1,0 +1,186 @@
+2025-03-22 12:33:56.988 | ERROR    | __main__:health_coach:21 - Error All elements must be instance of Tool (or a subclass)
+2025-03-22 12:36:56.561 | ERROR    | __main__:health_coach:21 - Error All elements must be instance of Tool (or a subclass)
+2025-03-22 12:36:58.669 | ERROR    | __main__:health_coach:21 - Error All elements must be instance of Tool (or a subclass)
+2025-03-22 14:30:45.747 | ERROR    | __main__:health_coach:75 - Error Error in generating model output:
+500 Server Error: Internal Server Error for url: https://router.huggingface.co/hf-inference/models/Qwen/Qwen2.5-Coder-32B-Instruct/v1/chat/completions (Request ID: Root=1-67df0fa8-6aba078507b75e225cc4b088;861a784b-fa07-44ee-9b34-299c35d20c98)
+
+Model too busy, unable to get response in less than 60 second(s)
+2025-03-22 14:55:27.676 | ERROR    | __main__:health_coach:75 - Error object dict can't be used in 'await' expression
+2025-03-22 15:13:25.534 | ERROR    | __main__:health_coach:24 - Error Error in generating model output:
+500 Server Error: Internal Server Error for url: https://router.huggingface.co/hf-inference/models/Qwen/Qwen2.5-Coder-32B-Instruct/v1/chat/completions (Request ID: Root=1-67df19a9-7f2fd8d15109152d6560f1bf;d5ca50da-d82d-40e5-a04e-0100999862d9)
+
+Model too busy, unable to get response in less than 60 second(s)
+2025-03-22 16:06:26.206 | ERROR    | __main__:health_coach:25 - Error a coroutine was expected, got "Here is the final answer from your managed agent 'food_agent':\n### 1. Task outcome (short version):\nGenerated a detailed vegan meal plan with breakfast, lunch, dinner, and snack options.\n\n### 2. Task outcome (extremely detailed version):\nThe meal plan includes:\n- **Breakfast Options:**\n  - Oatmeal with Fresh Fruits and Chia Seeds: Quinoa oatmeal topped with bananas, strawberries, and chia seeds for a protein-rich breakfast.\n  - Smoothie Bowl: A banana and spinach smoothie with mixed berries, nuts, and seeds, served in a bowl with granola.\n- **Lunch Options:**\n  - Vegan Quinoa Salad: Mixed greens, chickpeas, cucumbers, tomatoes, red bell peppers, with a lemon-tahini dressing.\n  - Stuffed Bell Peppers: Bell peppers filled with a mixture of rice, lentils, and herbs, topped with avocado slices.\n- **Dinner Options:**\n  - Stir-Fried Tofu and Vegetables: Tofu marinated in ginger, garlic, and soy sauce, stir-fried with broccoli, carrots, and bamboo shoots.\n  - Lentil Soup: Hearty lentil soup with carrots, celery, tomatoes, and parsley, served with a side of crusty bread.\n- **Snack Options:**\n  - Carrot Sticks and Hummus: Crispy carrot sticks served with a dip of hummus.\n  - Apple Slices with Almond Butter: Freshly sliced apples spread with almond butter for a healthy snack.\n\n### 3. Additional context (if relevant):\nThe meal plan provides a variety of nutritious and tasty options to cater to different preferences within a vegan diet."
+2025-03-22 16:26:10.501 | ERROR    | __main__:health_coach:28 - Error object AgentText can't be used in 'await' expression
+2025-03-22 16:59:26.739 | ERROR    | __main__:health_coach:29 - Error object list can't be used in 'await' expression
+2025-03-22 18:36:55.024 | ERROR    | __main__:health_coach:30 - Error a coroutine was expected, got "Here is the final answer from your managed agent 'exercise_agent':\n### 1. Task outcome (short version):\nA detailed 7-day workout plan for weight loss has been created.\n\n### 2. Task outcome (extremely detailed version):\n7-Day Workout Plan for Weight Loss:\n\nDay 1:\n  Squats: 3 sets of 12 reps\n  Deadlifts: 3 sets of 10 reps\n  Push-ups: 3 sets of 15 reps\nDay 2:\n  Pull-ups: 3 sets of 8 reps\n  Bench Press: 3 sets of 10 reps\n  Bicycle Crunches: 3 sets of 20 reps\nDay 3:\n  Cardio (Running): 20 minutes\n  Jumping Jacks: 3 sets of 50 reps\nDay 4:\n  Squats: 4 sets of 10 reps\n  Pull-ups: 3 sets of 10 reps\n  Plank (Static): 45 seconds\nDay 5:\n  Deadlifts: 3 sets of 12 reps\n  Bench Press: 3 sets of 12 reps\n  Russian Twists: 3 sets of 25 reps\nDay 6:\n  Cardio (Biking): 20 minutes\n  Step-Ups: 3 sets of 15 reps\nDay 7:\n  Active Recovery (Yoga): 30 minutes\n\n### 3. Additional context (if relevant):\nThe plan includes a mix of strength training, cardio, and active recovery to promote effective weight loss. Each week, the plan increases the intensity slightly to help in adaptation and progress."
+2025-03-22 18:53:16.291 | INFO     | __main__:health_coach:19 - Creating coach for goal: Lose weight, diet: Low Carb
+2025-03-22 18:54:24.248 | INFO     | __main__:health_coach:24 - Generated workout plan: <class 'smolagents.agent_types.AgentText'>
+2025-03-22 19:01:13.415 | INFO     | __main__:health_coach:27 - Generated meal plan: <class 'smolagents.agent_types.AgentText'>
+2025-03-22 19:37:59.111 | INFO     | __main__:health_coach:19 - Creating coach for goal: Build Muscle, diet: Vegan
+2025-03-22 19:38:59.520 | INFO     | __main__:health_coach:24 - Generated workout plan: <class 'list'>
+2025-03-22 19:44:44.944 | INFO     | __main__:health_coach:27 - Generated meal plan: <class 'smolagents.agent_types.AgentText'>
+2025-03-22 19:48:01.449 | INFO     | __main__:health_coach:18 - Creating coach for goal: build muscle, diet: Vegan
+2025-03-22 19:50:45.680 | INFO     | __main__:health_coach:23 - Generated workout plan: <class 'smolagents.agent_types.AgentText'>
+2025-03-22 19:54:34.864 | INFO     | __main__:health_coach:27 - Generated meal plan: <class 'dict'>
+2025-03-22 19:54:34.867 | INFO     | __main__:health_coach:41 - Processed workout plan: <class 'dict'>
+2025-03-22 19:54:34.870 | INFO     | __main__:health_coach:42 - Processed meal plan: <class 'dict'>
+2025-03-22 20:03:10.531 | INFO     | __main__:health_coach:18 - Creating coach for goal: build muscle, diet: low carb
+2025-03-22 20:03:14.198 | INFO     | __main__:health_coach:23 - Generated workout plan: <class 'smolagents.agent_types.AgentText'>
+2025-03-22 20:05:08.169 | INFO     | __main__:health_coach:27 - Generated meal plan: <class 'smolagents.agent_types.AgentText'>
+2025-03-22 20:05:08.170 | INFO     | __main__:health_coach:41 - Processed workout plan: <class 'dict'>
+2025-03-22 20:05:08.170 | INFO     | __main__:health_coach:42 - Processed meal plan: <class 'dict'>
+2025-03-22 20:08:21.330 | INFO     | __main__:health_coach:18 - Creating coach for goal: Lose weight, diet: Low carb
+2025-03-22 20:11:12.031 | INFO     | __main__:health_coach:36 - Processed workout plan: <class 'dict'>
+2025-03-22 20:11:12.033 | INFO     | __main__:health_coach:37 - Processed meal plan: <class 'dict'>
+2025-03-22 20:12:11.802 | INFO     | __main__:health_coach:18 - Creating coach for goal: Lose weight, diet: vegan
+2025-03-22 20:21:36.468 | INFO     | __main__:health_coach:36 - Processed workout plan: <class 'dict'>
+2025-03-22 20:21:36.469 | INFO     | __main__:health_coach:37 - Processed meal plan: <class 'dict'>
+2025-03-22 20:40:36.361 | INFO     | __main__:health_coach:20 - Workout routine for goal: Build Muscle, and diet: Low Carb
+2025-03-22 20:45:11.683 | INFO     | __main__:health_coach:38 - Processed workout plan: <class 'list'>
+2025-03-22 20:45:11.685 | INFO     | __main__:health_coach:39 - Processed meal plan: <class 'str'>
+2025-03-22 20:48:07.910 | INFO     | __main__:health_coach:20 - Workout routine for goal: Build Muscle and diet: Low Carb
+2025-03-22 20:51:57.559 | INFO     | __main__:health_coach:38 - Processed workout plan: <class 'dict'>
+2025-03-22 20:51:57.560 | INFO     | __main__:health_coach:39 - Processed meal plan: <class 'dict'>
+2025-03-22 20:55:59.390 | INFO     | __main__:health_coach:20 - Workout routine for goal: Lose Weight and diet: Low Carb
+2025-03-22 20:57:04.612 | INFO     | __main__:health_coach:38 - Processed workout plan: <class 'dict'>
+2025-03-22 20:57:04.613 | INFO     | __main__:health_coach:39 - Processed meal plan: <class 'dict'>
+2025-03-22 21:35:58.328 | INFO     | __main__:health_coach:20 - Workout routine for goal: Lose weight and diet: Vegan
+2025-03-22 21:39:08.788 | INFO     | __main__:health_coach:25 - Generated workout plan: <class 'smolagents.agent_types.AgentText'>
+2025-03-22 21:45:04.549 | INFO     | __main__:health_coach:28 - Generated meal plan: <class 'dict'>
+2025-03-22 21:45:04.551 | INFO     | __main__:health_coach:41 - Processed workout plan: <class 'dict'>
+2025-03-22 21:45:04.552 | INFO     | __main__:health_coach:42 - Processed meal plan: <class 'dict'>
+2025-03-22 21:57:56.358 | INFO     | __main__:health_coach:20 - Workout routine for goal: Build Muscle  and diet: Lose weight
+2025-03-22 21:59:00.617 | INFO     | __main__:health_coach:25 - Generated workout plan: <class 'dict'>
+2025-03-22 22:01:23.793 | ERROR    | __main__:health_coach:46 - Error: Error in generating model output:
+402 Client Error: Payment Required for url: https://router.huggingface.co/hf-inference/models/Qwen/Qwen2.5-Coder-32B-Instruct/v1/chat/completions (Request ID: Root=1-67df7983-021c72cc71c027905e088163;5dd81cf8-c792-4dc6-9a4a-73b6fef5cf4a)
+
+You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits.
+2025-03-22 22:01:23.794 | ERROR    | __main__:health_coach:47 - Full traceback:
+Traceback (most recent call last):
+
+  File "/home/bluemusk/anaconda3/envs/agentic_apps/lib/python3.11/site-packages/huggingface_hub/utils/_http.py", line 409, in hf_raise_for_status
+    response.raise_for_status()
+    │        └ <function Response.raise_for_status at 0x7fa5b756aa20>
+    └ <Response [402]>
+  File "/home/bluemusk/anaconda3/envs/agentic_apps/lib/python3.11/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+          │         │                        └ <Response [402]>
+          │         └ '402 Client Error: Payment Required for url: https://router.huggingface.co/hf-inference/models/Qwen/Qwen2.5-Coder-32B-Instruc...
+          └ <class 'requests.exceptions.HTTPError'>
+
+requests.exceptions.HTTPError: 402 Client Error: Payment Required for url: https://router.huggingface.co/hf-inference/models/Qwen/Qwen2.5-Coder-32B-Instruct/v1/chat/completions
+
+
+The above exception was the direct cause of the following exception:
+
+
+Traceback (most recent call last):
+
+  File "/home/bluemusk/anaconda3/envs/agentic_apps/lib/python3.11/site-packages/smolagents/agents.py", line 1230, in step
+    chat_message: ChatMessage = self.model(
+                                │    └ <smolagents.models.HfApiModel object at 0x7fa592c78590>
+                                └ <smolagents.agents.CodeAgent object at 0x7fa5901ecc50>
+  File "/home/bluemusk/anaconda3/envs/agentic_apps/lib/python3.11/site-packages/smolagents/models.py", line 487, in __call__
+    response = self.client.chat_completion(**completion_kwargs)
+               │    │      │                 └ {'messages': [{'role': <MessageRole.SYSTEM: 'system'>, 'content': [{'type': 'text', 'text': 'You are an expert assistant who ...
+               │    │      └ <function InferenceClient.chat_completion at 0x7fa5b70d4b80>
+               │    └ <InferenceClient(model='Qwen/Qwen2.5-Coder-32B-Instruct', timeout=120)>
+               └ <smolagents.models.HfApiModel object at 0x7fa592c78590>
+  File "/home/bluemusk/anaconda3/envs/agentic_apps/lib/python3.11/site-packages/huggingface_hub/inference/_client.py", line 956, in chat_completion
+    data = self._inner_post(request_parameters, stream=stream)
+           │    │           │                          └ False
+           │    │           └ RequestParameters(url='https://router.huggingface.co/hf-inference/models/Qwen/Qwen2.5-Coder-32B-Instruct/v1/chat/completions'...
+           │    └ <function InferenceClient._inner_post at 0x7fa5b70d4680>
+           └ <InferenceClient(model='Qwen/Qwen2.5-Coder-32B-Instruct', timeout=120)>
+  File "/home/bluemusk/anaconda3/envs/agentic_apps/lib/python3.11/site-packages/huggingface_hub/inference/_client.py", line 321, in _inner_post
+    hf_raise_for_status(response)
+    │                   └ <Response [402]>
+    └ <function hf_raise_for_status at 0x7fa5b72182c0>
+  File "/home/bluemusk/anaconda3/envs/agentic_apps/lib/python3.11/site-packages/huggingface_hub/utils/_http.py", line 481, in hf_raise_for_status
+    raise _format(HfHubHTTPError, str(e), response) from e
+          │       │                       └ <Response [402]>
+          │       └ <class 'huggingface_hub.errors.HfHubHTTPError'>
+          └ <function _format at 0x7fa5b7218360>
+
+huggingface_hub.errors.HfHubHTTPError: 402 Client Error: Payment Required for url: https://router.huggingface.co/hf-inference/models/Qwen/Qwen2.5-Coder-32B-Instruct/v1/chat/completions (Request ID: Root=1-67df7983-021c72cc71c027905e088163;5dd81cf8-c792-4dc6-9a4a-73b6fef5cf4a)
+
+You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits.
+
+
+The above exception was the direct cause of the following exception:
+
+
+Traceback (most recent call last):
+
+  File "/home/bluemusk/anaconda3/envs/agentic_apps/lib/python3.11/threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x7fa5b8c90ea0>
+    └ <WorkerThread(AnyIO worker thread, started daemon 140349073266240)>
+  File "/home/bluemusk/anaconda3/envs/agentic_apps/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x7fa592772f20>
+    └ <WorkerThread(AnyIO worker thread, started daemon 140349073266240)>
+  File "/home/bluemusk/anaconda3/envs/agentic_apps/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 962, in run
+    result = context.run(func, *args)
+             │       │   │      └ ('Build Muscle ', 'Lose weight')
+             │       │   └ <function health_coach at 0x7fa590218cc0>
+             │       └ <method 'run' of '_contextvars.Context' objects>
+             └ <_contextvars.Context object at 0x7fa591395580>
+  File "/home/bluemusk/anaconda3/envs/agentic_apps/lib/python3.11/site-packages/gradio/utils.py", line 890, in wrapper
+    response = f(*args, **kwargs)
+               │  │       └ {}
+               │  └ ('Build Muscle ', 'Lose weight')
+               └ <function health_coach at 0x7fa592770a40>
+  File "<decorator-gen-1>", line 2, in health_coach
+  File "/home/bluemusk/anaconda3/envs/agentic_apps/lib/python3.11/site-packages/prometheus_client/context_managers.py", line 80, in wrapped
+    return func(*args, **kwargs)
+           │     │       └ {}
+           │     └ ('Build Muscle ', 'Lose weight')
+           └ <function health_coach at 0x7fa5926d04a0>
+
+> File "/mnt/c/Users/emman/agentic_apps/smolagents_framework/agent_main.py", line 27, in health_coach
+    meal_plan_result = manager.run(f"Create a meal plan for {dietary_preference}")
+                       │       └ <function MultiStepAgent.run at 0x7fa592855440>
+                       └ <smolagents.agents.CodeAgent object at 0x7fa5901ecc50>
+
+  File "/home/bluemusk/anaconda3/envs/agentic_apps/lib/python3.11/site-packages/smolagents/agents.py", line 319, in run
+    return deque(self._run(task=self.task, max_steps=max_steps, images=images), maxlen=1)[0]
+           │     │    │         │    │               │                 └ None
+           │     │    │         │    │               └ 20
+           │     │    │         │    └ 'Create a meal plan for Lose weight'
+           │     │    │         └ <smolagents.agents.CodeAgent object at 0x7fa5901ecc50>
+           │     │    └ <function MultiStepAgent._run at 0x7fa5928554e0>
+           │     └ <smolagents.agents.CodeAgent object at 0x7fa5901ecc50>
+           └ <class 'collections.deque'>
+  File "/home/bluemusk/anaconda3/envs/agentic_apps/lib/python3.11/site-packages/smolagents/agents.py", line 333, in _run
+    raise e
+  File "/home/bluemusk/anaconda3/envs/agentic_apps/lib/python3.11/site-packages/smolagents/agents.py", line 330, in _run
+    final_answer = self._execute_step(task, memory_step)
+                   │    │             │     └ ActionStep(model_input_messages=[{'role': <MessageRole.SYSTEM: 'system'>, 'content': [{'type': 'text', 'text': 'You are an ex...
+                   │    │             └ 'Create a meal plan for Lose weight'
+                   │    └ <function MultiStepAgent._execute_step at 0x7fa592855620>
+                   └ <smolagents.agents.CodeAgent object at 0x7fa5901ecc50>
+  File "/home/bluemusk/anaconda3/envs/agentic_apps/lib/python3.11/site-packages/smolagents/agents.py", line 354, in _execute_step
+    final_answer = self.step(memory_step)
+                   │    │    └ ActionStep(model_input_messages=[{'role': <MessageRole.SYSTEM: 'system'>, 'content': [{'type': 'text', 'text': 'You are an ex...
+                   │    └ <function CodeAgent.step at 0x7fa5928568e0>
+                   └ <smolagents.agents.CodeAgent object at 0x7fa5901ecc50>
+  File "/home/bluemusk/anaconda3/envs/agentic_apps/lib/python3.11/site-packages/smolagents/agents.py", line 1239, in step
+    raise AgentGenerationError(f"Error in generating model output:\n{e}", self.logger) from e
+          │                                                               │    └ <smolagents.monitoring.AgentLogger object at 0x7fa59022e3d0>
+          │                                                               └ <smolagents.agents.CodeAgent object at 0x7fa5901ecc50>
+          └ <class 'smolagents.utils.AgentGenerationError'>
+
+smolagents.utils.AgentGenerationError: Error in generating model output:
+402 Client Error: Payment Required for url: https://router.huggingface.co/hf-inference/models/Qwen/Qwen2.5-Coder-32B-Instruct/v1/chat/completions (Request ID: Root=1-67df7983-021c72cc71c027905e088163;5dd81cf8-c792-4dc6-9a4a-73b6fef5cf4a)
+
+You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits.
+2025-03-22 22:07:19.042 | INFO     | __main__:health_coach:20 - Workout routine for goal: Lose weight and diet: Low Carb
+2025-03-22 22:08:01.867 | INFO     | __main__:health_coach:25 - Generated workout plan: <class 'list'>
+2025-03-22 22:08:51.164 | INFO     | __main__:health_coach:28 - Generated meal plan: <class 'list'>
+2025-03-22 22:08:51.165 | INFO     | __main__:health_coach:34 - Plans converted to readable text format
+2025-03-22 22:12:06.301 | INFO     | __main__:health_coach:20 - Workout routine for goal: Build Muscle and diet: Vegan
+2025-03-22 22:14:40.548 | INFO     | __main__:health_coach:25 - Generated workout plan: <class 'smolagents.agent_types.AgentText'>
+2025-03-22 22:15:19.043 | INFO     | __main__:health_coach:28 - Generated meal plan: <class 'list'>
+2025-03-22 22:15:19.045 | INFO     | __main__:health_coach:34 - Plans converted to readable text format
