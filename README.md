@@ -67,7 +67,7 @@ python3 health_coach_agent/main_agent.py
 ***Results:***
 1. Running on local URL: ```http://127.0.0.1:7860/``` - Gradio UI for seamless interaction. To create a public link, set `share=True` in `launch()`.
 2. ```http://localhost:8000/``` - Prometheus UI to monitor request_processing_seconds_count 1.0
-3. Check [health_coach.log]() for updated logs.
+3. Check [health_coach.log](https://github.com/bluemusk24/HealthCoach_Agent/blob/main/health_coach.log) for updated logs.
 
 ###  Deploying Health Coach Smolagent AI Agent With Docker
 
@@ -103,15 +103,21 @@ locust -f locust_agent.py --host http://localhost:7860
 ```bash 
 python3 agent_arize_tracing.py
 ```
-[PhoenixArize_Tracing1](https://github.com/bluemusk24/HealthCoach_Agent/blob/main/smolagents_framework/app.phoenix.arize.com.jpeg) 
+[PhoenixArize_Tracing1](https://github.com/bluemusk24/HealthCoach_Agent/blob/main/smolagents_framework/app.phoenix.arize.com.jpeg)
+
 [PhoenixArize_Tracing2](https://github.com/bluemusk24/HealthCoach_Agent/blob/main/smolagents_framework/app.phoenix.arize.jpeg)
 
 
 ## Tech Stack:
 ***Gradio*** - to create a seemless user interface.
+
 ***Prometheus*** - to monitor systems performance by tracking how long each user request takes to process.
+
 ***Locust*** - python-based-load-testing framework for performance of APIs.
+
 ***Smolagents*** - huggingface agentic framework to build AI agents.
+
+***Docker*** - to build containerized applications.
 
 
 * ```main_agent.py``` code for JSON output in Gradio UI
