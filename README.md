@@ -1,4 +1,4 @@
-# PROJECTS DEFINITION:
+# PROJECT DEFINITION:
 
 * The aim of this project is to build a ```HEALTH COACH AGENTIC AI-Powered Application``` using [Smolagents Framework](https://huggingface.co/learn/agents-course/unit2/smolagents/introduction). The ```Health Coach AI Agent``` will be optimized, dockerized for deployment, and manage its operations effectively for scalability and reliability.
 
@@ -28,7 +28,7 @@ pip install -r requirements.txt
 
 * ```cache_dir``` - to store and retrieve cached data. It automatically handles writing to disk while keeping frequently accessed data in memory for speed. Also, it eliminates redundant API calls, and speeds up responses to frequently queried targets.
 
-* [exercise_agent.py]() - an agent that interacts with an ```Exercise_Database_API```. The agent retrieves recommended workout routine based on ```target muscle``` group or required ```equipment```.
+* [exercise_agent.py](https://github.com/bluemusk24/HealthCoach_Agent/blob/main/smolagents_framework/exercise_agent.py) - an agent that interacts with an ```Exercise_Database_API```. The agent retrieves recommended workout routine based on ```target muscle``` group or required ```equipment```.
 
 * .env - to load api keys.
 
@@ -39,7 +39,7 @@ python3 smolagents_framework/exercise_agent.py
 Enter your Fitness Goal: lose weight, build muscle
 ```
 
-* [food_agent.py]() - an agent that interact with a ```Food_Database_API```. The agent retrieves details about food items or search for foods (diet preferences) based on user inputs.
+* [food_agent.py](https://github.com/bluemusk24/HealthCoach_Agent/blob/main/smolagents_framework/food_agent.py) - an agent that interact with a ```Food_Database_API```. The agent retrieves details about food items or search for foods (diet preferences) based on user inputs.
 
 * Test the ```food_agent``` locally:
 ```bash
@@ -48,7 +48,7 @@ python3 smolagents_framework/food_agent.py
 Enter your Dietary Preference: Low Carb, Vegan
 ```
 
-* [manager_agent]() - a manager agent that delegates task to the ```exercise_agent``` or ```food_agent```
+* [manager_agent](https://github.com/bluemusk24/HealthCoach_Agent/blob/main/smolagents_framework/manager_agent.py) - a manager agent that delegates task to the ```exercise_agent``` or ```food_agent```
 
 * Test the ```manager_agent``` locally:
 ```bash
@@ -57,7 +57,7 @@ python3 smolagents_framework/manager_agent.py
 Enter Prefered Diet OR Fitness Plan: I want to build muscle
 ```
 
-* [agent_main.py]() - agentic python script to tie the entire system together using ```Gradio``` to create an interactive user interface.
+* [main_agent.py](https://github.com/bluemusk24/HealthCoach_Agent/blob/main/smolagents_framework/main_agent.py) - agentic python script to tie the entire system together using ```Gradio``` to create an interactive user interface.
 
 ***Run this script***
 ```bash
@@ -73,9 +73,9 @@ python3 health_coach_agent/main_agent.py
 
 ***create the following:***
 
-* [docker_agent.py]() - python script to include an environment variable for ```Gradio```.
+* [docker_agent.py](https://github.com/bluemusk24/HealthCoach_Agent/blob/main/smolagents_framework/docker_agent.py) - python script to include an environment variable for ```Gradio```.
 
-* [Dockerfile]() - to build a docker image and containerized our application to enable deployment. Run codes below:
+* [Dockerfile](https://github.com/bluemusk24/HealthCoach_Agent/blob/main/smolagents_framework/Dockerfile) - to build a docker image and containerized our application to enable deployment. Run codes below:
 ```bash
 docker build -t health_coach_smolagent:v1 .
 
@@ -84,9 +84,9 @@ docker run -it --rm -p 7860:7860 health_coach_smolagent:v1
 
 ```http://localhost:7860/``` - Launch Gradio UI for seamless interaction. To create a public link, set `share=True` in `launch()`.
 
-***Pictorial View of Gradio:*** [Gradio_Image]()
+***Pictorial View of Gradio:*** [Gradio_Image](https://github.com/bluemusk24/HealthCoach_Agent/blob/main/smolagents_framework/gradio.jpeg)
 
-* [locust_agent.py]() - python script to observe and simulate a large number of users interacting with the application concurrently, test app's scalability and reliability. Wait time is around 1-2 seconds for virtual users' post request to the application endpoint. 
+* [locust_agent.py](https://github.com/bluemusk24/HealthCoach_Agent/blob/main/smolagents_framework/locust_agent.py) - python script to observe and simulate a large number of users interacting with the application concurrently, test app's scalability and reliability. Wait time is around 1-2 seconds for virtual users' post request to the application endpoint. 
 
 * Run code below to load test our application with 10 users at a rate of 10 requests/sec.
 
@@ -95,15 +95,16 @@ locust -f locust_agent.py --host http://localhost:7860
 ```
 ***Result:*** Launch Locust web interface at ```http://localhost:8089```
 
-***Pictorial View of Locust:*** [Locust_Image]()
+***Pictorial View of Locust:*** [Locust_Image](https://github.com/bluemusk24/HealthCoach_Agent/blob/main/smolagents_framework/locust_img.jpeg)
 
 ### Tracing Smolagents (Health_Coach Agent) with Arize Phoenix
 
-* [agent_arize_tracing.py]() - python script to log in traces, monitor and evaluate agents with [ARIZE_PHOENIX](https://phoenix.arize.com/)
+* [agent_arize_tracing.py](https://github.com/bluemusk24/HealthCoach_Agent/blob/main/smolagents_framework/agent_arize_tracing.py) - python script to log in traces, monitor and evaluate agents with [ARIZE_PHOENIX](https://phoenix.arize.com/)
 ```bash 
 python3 agent_arize_tracing.py
 ```
-[PhoenixArize_Tracing1]() [PhoenixArize_Tracing2]()
+[PhoenixArize_Tracing1](https://github.com/bluemusk24/HealthCoach_Agent/blob/main/smolagents_framework/app.phoenix.arize.com.jpeg) 
+[PhoenixArize_Tracing2](https://github.com/bluemusk24/HealthCoach_Agent/blob/main/smolagents_framework/app.phoenix.arize.jpeg)
 
 
 ## Tech Stack:
