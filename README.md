@@ -121,6 +121,8 @@ python3 agent_arize_tracing.py
 
 ***Docker*** - to build containerized applications.
 
+***Arize Phoenix*** - open-source observability tool designed for experimentation, evaluation, and troubleshooting of AI and LLM applications
+
 
 ### Extra:
 * ```main_agent.py``` code for JSON output in Gradio UI
