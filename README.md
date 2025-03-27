@@ -1,10 +1,12 @@
-# PROJECT DEFINITION:
+## HEALTH COACH AI ASSISTANT (SMOLAGENT FRAMEWORK)
+
+### PROJECT DEFINITION: 
 
 * The aim of this project is to build a ```HEALTH COACH AGENTIC AI-Powered Application``` using [Smolagents Framework](https://huggingface.co/learn/agents-course/unit2/smolagents/introduction). The ```Health Coach AI Agent``` will be optimized, dockerized for deployment, and manage its operations effectively for scalability and reliability.
 
 ***Description*** : This agent provides users with workout and meal plans based on their fitness goals and dietary preferences in real time. This agent uses several ```APIs```, and integrates ```Gradio``` for an interactive and user-freindly experience. Reference Link: [Exercise_Database_API](https://exercisedb-api.vercel.app/docs).
 
-## PROCEDURES:
+### PROCEDURES:
 
 * create a directory and virtual environment to separate dependencies.
 
@@ -108,7 +110,7 @@ python3 agent_arize_tracing.py
 [PhoenixArize_Tracing2](https://github.com/bluemusk24/HealthCoach_Agent/blob/main/smolagents_framework/app.phoenix.arize.jpeg)
 
 
-## Tech Stack:
+### Tech Stack:
 ***Gradio*** - to create a seemless user interface.
 
 ***Prometheus*** - to monitor systems performance by tracking how long each user request takes to process.
@@ -120,6 +122,7 @@ python3 agent_arize_tracing.py
 ***Docker*** - to build containerized applications.
 
 
+### Extra:
 * ```main_agent.py``` code for JSON output in Gradio UI
 
 ```bash
